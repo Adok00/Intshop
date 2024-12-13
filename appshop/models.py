@@ -12,7 +12,7 @@ class Marka(models.Model):
 class Brend(models.Model):
     name = models.CharField(max_length=50)
     description = models.TextField()
-    marka = models.ForeignKey(Marka, on_delete=models.CASCADE)
+
     def __str__(self):
         return self.name
 
